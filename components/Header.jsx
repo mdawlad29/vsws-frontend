@@ -45,10 +45,10 @@ const Header = () => {
           {/* Mobile nav */}
           <ul
             className={`
-          md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${
-            open ? "right-0" : "right-[100%]"
-          }
-          `}
+    md:hidden bg-white absolute w-full md:w-80 top-0 left-0 py-24 pl-4 duration-700 ${
+      open ? "translate-x-0" : "-translate-x-full"
+    }
+`}
           >
             <li>
               <Link href={"/"} className="py-7 px-3 inline-block">
